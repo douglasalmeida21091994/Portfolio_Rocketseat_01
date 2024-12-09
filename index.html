@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="scroll-smooth"> 
+<!-- animação suave ao deslocar a página até a seção de projetos quando o link for clicado #projetos indo para id="projetos" -->
 
 <head>
     <meta charset="UTF-8">
@@ -19,10 +20,10 @@
         <!-- LINKS -->
         <div>
             <ul class="flex gap-x-3 font-medium">
-                <li><a href="#" class="hover:underline">Projetos</a></li>
-                <li><a href="#" class="hover:underline">Github</a></li>
-                <li><a href="#" class="hover:underline">LinkedIn</a></li>
-                <li><a href="#" class="hover:underline">Instagram</a></li>
+                <li><a href="#projetos" class="hover:underline hover:text-cyan-600 transition-all">Projetos</a></li>
+                <li><a href="#" class="hover:underline hover:text-cyan-600 transition-all">Github</a></li>
+                <li><a href="#" class="hover:underline hover:text-cyan-600 transition-all">LinkedIn</a></li>
+                <li><a href="#" class="hover:underline hover:text-cyan-600 transition-all">Instagram</a></li>
             </ul>
         </div>
     </header>
@@ -43,16 +44,27 @@
                 <ul class="flex gap-x-3 mt-3">
 
                     <li>
-                        <a href="#"><img class="w-[30px] h-[30px] hover:animate-bounce" src="img/github.png" alt="GitHub Logo"></a>
+                        <a href="#">
+                            <img class="w-[30px] h-[30px] hover:animate-bounce" src="img/github.png" alt="GitHub Logo">
+                        </a>
                     </li>
+
                     <li>
-                        <a href="#"><img class="w-[30px] h-[30px] hover:animate-bounce" src="img/linkedin.png" alt="LinkedIn Logo"></a>
+                        <a href="#">
+                            <img class="w-[30px] h-[30px] hover:animate-bounce" src="img/linkedin.png" alt="LinkedIn Logo">
+                        </a>
                     </li>
+
                     <li>
-                        <a href="#"><img class="w-[30px] h-[30px] hover:animate-bounce" src="img/instagram.png" alt="Instagram Logo"></a>
+                        <a href="#">
+                            <img class="w-[30px] h-[30px] hover:animate-bounce" src="img/instagram.png" alt="Instagram Logo">
+                        </a>
                     </li>
+
                     <li>
-                        <a href="#"><img class="w-[30px] h-[30px] hover:animate-bounce" src="img/facebook.png" alt="Facebook Logo"></a>
+                        <a href="#">
+                            <img class="w-[30px] h-[30px] hover:animate-bounce" src="img/facebook.png" alt="Facebook Logo">
+                        </a>
                     </li>
                     
                 </ul>
@@ -60,12 +72,14 @@
             </div>
             <!-- IMAGEM -->
             <div class="w-1/3 flex items-center justify-center">
-                <div>foto</div>
+                <div class="-mr-14">
+                    <img class="w-[200px] rounded-lg mt-1 hover:animate-pulse" src="img/foto.jpeg" alt="Foto Dougla Almeida" srcset="">
+                </div>
             </div>
         </section>
 
         <!-- PROJETOS -->
-        <h2 class="text-2xl font-bold mt-3">Meus Projetos <span class="text-xs text-gray-400 opacity-50 italic">(Finalizado
+        <h2 class="text-2xl font-bold mt-3">Meus Projetos <span class="text-xs text-gray-400 opacity-50 italic">(Finalizados
                 em 2024)</span></h2>
 
         <!-- PROJETO -->
@@ -110,7 +124,7 @@
         </section>
 
         <!-- PROJETO -->
-        <section class="bg-slate-800 rounded-lg p-3 space-y-3 py-6  mt-3">
+        <section class="bg-slate-800 rounded-lg p-3 space-y-3 py-6  mt-3" id="projetos">
 
             <div class="flex items-center">
                 <div class="w-1/5">Foto do Projeto</div>
