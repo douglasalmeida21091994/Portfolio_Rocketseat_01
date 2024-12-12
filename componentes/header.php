@@ -3,7 +3,7 @@ $itens = [
     ['href' => '#projetos', 'texto' => 'Projetos'],
     ['href' => '', 'texto' => 'Github'],
     ['href' => '', 'texto' => 'LinkedIn'],
-    ['href' => '', 'texto' => 'Contatos']    
+    ['href' => '', 'texto' => 'Contatos']
 ]
 ?>
 
@@ -20,15 +20,18 @@ $itens = [
 
             <?php foreach ($itens as $item): ?>
 
-                <li><a href="<?= $item['href'] ?>" class="hover:underline hover:text-cyan-600 transition-all">
+                <li>
+                    <a href="<?= $item['href'] ?>" class="hover:underline hover:text-cyan-600 transition-all">
 
-                    <?= $item['texto'] ?>
-                </a></li>
+                        <?= $item['texto'] ?>
+                        
+                    </a>
+                </li>
 
             <?php endforeach; ?>
 
 
-            
+
         </ul>
     </div>
 </header>

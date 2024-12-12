@@ -10,9 +10,12 @@ $itensHero = [
 <section class="flex gap-x-3">
     <!-- TITULO E DESCRIÇÃO -->
     <div class="w-2/3">
-        <h1 class="text-3xl font-bold">Olá, meu nome é Douglas Almeida.</h1>
+        <h1 class="text-3xl font-bold">
+            <!-- adicionando efeito digitar para exibir aqui meu nome -->
+            <span id="typing-text"></span>
+        </h1>
 
-        <p class="text-xl leading-7 mt-6">Falando um pouco sobre mim, sou desenvolvedor web que adoro criar
+        <p class="text-xl leading-7 mt-6 text-justify">Falando um pouco sobre mim, sou desenvolvedor web que adoro criar
             coisas novas e aprender novas tecnologias. Especializado em PHP, Láravel, CSS, HTML, Javascript e
             Frameworks CSS.
         </p>
@@ -32,10 +35,10 @@ $itensHero = [
         </ul>
 
     </div>
-    <!-- IMAGEM -->
+    <!-- MINHA IMAGEM LOGO -->
     <div class="w-1/3 flex items-center justify-center">
         <div class="-mr-14">
-            <img class="w-[200px] rounded-lg mt-1 hover:animate-pulse" src="img/foto.jpeg" alt="Foto Dougla Almeida" srcset="">
+            <img class="w-[200px] rounded-lg mt-1 hover:animate-pulse cursor-pointer" src="img/foto.jpeg" alt="Foto Dougla Almeida" srcset="">
         </div>
     </div>
 </section>

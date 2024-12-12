@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalhando com estilos</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -32,15 +33,17 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="mx-auto max-w-screen-lg min-h-20 px-3">
+    <footer class="mx-auto max-w-screen-lg min-h-20 px-3 ">
 
-        <div class="border-t border-gray-600 pt-6 text-gray-400 text-sm">
+        <div class="border-t border-gray-600 pt-6 text-gray-400 text-sm flex justify-center">
 
             &copy; Copyright <?= date('Y') ?>. Desenvolvido por Douglas Almeida ;).
 
         </div>
 
     </footer>
+
+    <script src="js/javascript.js"></script>
 
 </body>
 
