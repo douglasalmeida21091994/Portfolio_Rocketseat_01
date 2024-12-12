@@ -1,4 +1,12 @@
-<!-- HERO -->
+<?php
+$itensHero = [
+    ['href' => '', 'src' => 'img/github.png', 'alt' => 'GitHub Logo'],
+    ['href' => '', 'src' => 'img/linkedin.png', 'alt' => 'LinkedIn Logo'],
+    ['href' => '', 'src' => 'img/instagram.png', 'alt' => 'Instagram Logo'],
+    ['href' => '', 'src' => 'img/facebook.png', 'alt' => 'Facebook Logo'],
+]
+?>
+
 <section class="flex gap-x-3">
     <!-- TITULO E DESCRIÇÃO -->
     <div class="w-2/3">
@@ -11,29 +19,15 @@
 
         <ul class="flex gap-x-3 mt-3">
 
-            <li>
-                <a href="#">
-                    <img class="w-[30px] h-[30px] hover:animate-bounce" src="img/github.png" alt="GitHub Logo">
-                </a>
-            </li>
+            <?php foreach ($itensHero as $itemHero): ?>
 
-            <li>
-                <a href="#">
-                    <img class="w-[30px] h-[30px] hover:animate-bounce" src="img/linkedin.png" alt="LinkedIn Logo">
-                </a>
-            </li>
+                <li>
+                    <a href="<?= $itemHero['href'] ?>">
+                        <img class="w-[30px] h-[30px] hover:animate-bounce" src="<?= $itemHero['src'] ?>" alt="<?= $itemHero['alt'] ?>">
+                    </a>
+                </li>
 
-            <li>
-                <a href="#">
-                    <img class="w-[30px] h-[30px] hover:animate-bounce" src="img/instagram.png" alt="Instagram Logo">
-                </a>
-            </li>
-
-            <li>
-                <a href="#">
-                    <img class="w-[30px] h-[30px] hover:animate-bounce" src="img/facebook.png" alt="Facebook Logo">
-                </a>
-            </li>
+            <?php endforeach; ?>
 
         </ul>
 
