@@ -23,8 +23,8 @@
         <?php include('./componentes/hero.php') ?>
 
         <!-- MEUS PROJETOS -->
-        <h2 class="text-2xl font-bold mt-3">Meus Projetos <span class="text-xs text-gray-400 opacity-50 italic">(Finalizados
-                em 2024)</span></h2>
+        <h2 class="text-2xl font-bold mt-3">Meus Projetos <!--<span class="text-xs text-gray-400 opacity-50 italic">(Finalizados
+                em 2024)</span>--></h2>
 
         <!-- PROJETO -->
         <?php include('./componentes/projetos.php') ?>        
