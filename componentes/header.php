@@ -1,3 +1,13 @@
+<?php
+$itens = [
+    ['href' => '#projetos', 'texto' => 'Projetos'],
+    ['href' => '', 'texto' => 'Github'],
+    ['href' => '', 'texto' => 'LinkedIn'],
+    ['href' => '', 'texto' => 'Contatos']    
+]
+?>
+
+
 <header class="mx-auto max-w-screen-lg px-3 py-6 flex items-center justify-between">
     <!-- LOGO -->
     <div class="font-bold text-xl text-cyan-600">
@@ -7,10 +17,18 @@
     <!-- LINKS -->
     <div>
         <ul class="flex gap-x-3 font-medium">
-            <li><a href="#projetos" class="hover:underline hover:text-cyan-600 transition-all">Projetos</a></li>
-            <li><a href="#" class="hover:underline hover:text-cyan-600 transition-all">Github</a></li>
-            <li><a href="#" class="hover:underline hover:text-cyan-600 transition-all">LinkedIn</a></li>
-            <li><a href="#" class="hover:underline hover:text-cyan-600 transition-all">Instagram</a></li>
+
+            <?php foreach ($itens as $item): ?>
+
+                <li><a href="<?= $item['href'] ?>" class="hover:underline hover:text-cyan-600 transition-all">
+
+                    <?= $item['texto'] ?>
+                </a></li>
+
+            <?php endforeach; ?>
+
+
+            
         </ul>
     </div>
 </header>
