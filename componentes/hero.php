@@ -1,7 +1,7 @@
 <?php
 $itensHero = [
-    ['href' => '', 'src' => 'img/github.png', 'alt' => 'GitHub Logo'],
-    ['href' => '', 'src' => 'img/linkedin.png', 'alt' => 'LinkedIn Logo'],
+    ['href' => 'https://github.com/douglasalmeida21091994', 'src' => 'img/github.png', 'alt' => 'GitHub Logo'],
+    ['href' => 'https://www.linkedin.com/in/douglasalmeidadev94', 'src' => 'img/linkedin.png', 'alt' => 'LinkedIn Logo'],
     ['href' => '', 'src' => 'img/instagram.png', 'alt' => 'Instagram Logo'],
     ['href' => '', 'src' => 'img/facebook.png', 'alt' => 'Facebook Logo'],
 ]
@@ -23,14 +23,23 @@ $itensHero = [
         <ul class="flex gap-x-3 mt-3">
 
             <?php foreach ($itensHero as $itemHero): ?>
-
                 <li>
-                    <a href="<?= $itemHero['href'] ?>">
-                        <img class="w-[30px] h-[30px] hover:animate-bounce" src="<?= $itemHero['src'] ?>" alt="<?= $itemHero['alt'] ?>">
-                    </a>
-                </li>
+                    <?php if (!empty($itemHero['href'])): ?>
+                        <a href="<?= $itemHero['href'] ?>" target="_blank">
+                        <?php else: ?>
+                            <span> <!-- Usando <span> caso não tenha href -->
+                            <?php endif; ?>
 
+                            <img class="w-[30px] h-[30px] hover:animate-bounce" src="<?= $itemHero['src'] ?>" alt="<?= $itemHero['alt'] ?>">
+
+                            <?php if (!empty($itemHero['href'])): ?>
+                        </a>
+                    <?php else: ?>
+                            </span>
+                    <?php endif; ?>
+                </li>
             <?php endforeach; ?>
+
 
         </ul>
 

@@ -1,8 +1,8 @@
 <?php
 $itens = [
     ['href' => '#projetos', 'texto' => 'Projetos'],
-    ['href' => '', 'texto' => 'Github'],
-    ['href' => '', 'texto' => 'LinkedIn'],
+    ['href' => 'https://github.com/douglasalmeida21091994', 'texto' => 'Github'],
+    ['href' => 'https://www.linkedin.com/in/douglasalmeidadev94', 'texto' => 'LinkedIn'],
     ['href' => '', 'texto' => 'Contatos']
 ]
 ?>
@@ -21,16 +21,16 @@ $itens = [
             <?php foreach ($itens as $item): ?>
 
                 <li>
-                    <a href="<?= $item['href'] ?>" class="hover:underline hover:text-cyan-600 transition-all">
+                    <?php if (!empty($item['href'])): ?>
+                        <a href="<?= $item['href'] ?>" target="_blank" class="hover:underline hover:text-cyan-600 transition-all">
 
-                        <?= $item['texto'] ?>
-                        
-                    </a>
+                            <?= $item['texto'] ?>
+
+                        </a>
+                    <?php endif; ?>
                 </li>
 
             <?php endforeach; ?>
-
-
 
         </ul>
     </div>
