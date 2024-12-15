@@ -15,9 +15,7 @@ $itensHero = [
             <span id="typing-text"></span>
         </h1>
 
-        <p class="text-xl leading-7 mt-6 text-justify">Falando um pouco sobre mim, sou desenvolvedor web que adoro criar
-            coisas novas e aprender novas tecnologias. Especializado em PHP, Láravel, CSS, HTML, Javascript e
-            Frameworks CSS.
+        <p class="text-xl leading-7 mt-6 text-justify">Desenvolvedor web que adoro criar coisas novas e aprender novas tecnologias. Experiência em PHP, Láravel, CSS, HTML, Javascript, Tailwind e Bootstrap.
         </p>
 
         <ul class="flex gap-x-3 mt-3">

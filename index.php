@@ -37,7 +37,7 @@
 
         <div class="border-t border-gray-600 pt-6 text-gray-400 text-sm flex justify-center">
 
-            &copy; Copyright <?= date('Y') ?>. Desenvolvido por Douglas Almeida ;).
+            &copy; Copyright <?= date('Y') ?> - Desenvolvido por Douglas Almeida ;)
 
         </div>
 

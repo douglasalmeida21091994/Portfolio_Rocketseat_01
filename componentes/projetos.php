@@ -2,8 +2,8 @@
 $itensProjetos = [
     [
         "titulo" => "Portfólio_01",
-        "finalizado" => false,
-        "ano" => "",
+        "finalizado" => true,
+        "ano" => "2024",
         "descricao1" => "Este é meu primeiro portfólio que estou desenvolvendo no meu curso de PHP da Rocketseat.",
         "descricao2" => "",
         "stack" => ['Javascript', 'Tailwind', 'CSS', 'HTML', 'PHP'],
