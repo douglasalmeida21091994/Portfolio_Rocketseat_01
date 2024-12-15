@@ -6,7 +6,7 @@ $itensProjetos = [
         "ano" => "2024",
         "descricao1" => "Este é meu primeiro portfólio que estou desenvolvendo no meu curso de PHP da Rocketseat.",
         "descricao2" => "",
-        "stack" => ['Javascript', 'Tailwind', 'CSS', 'HTML', 'PHP'],
+        "stack" => ['PHP', 'Javascript', 'Tailwind', 'CSS', 'HTML'],
         "img" => "img/portfolio01.png",
         "alt" => "Imagem do Projeto Atualizar Pagamentos"
     ],
