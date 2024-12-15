@@ -7,7 +7,6 @@ $itens = [
 ]
 ?>
 
-
 <header class="mx-auto max-w-screen-lg px-3 py-6 flex items-center justify-between">
     <!-- LOGO -->
     <div class="font-bold text-xl text-cyan-600">
@@ -21,13 +20,13 @@ $itens = [
             <?php foreach ($itens as $item): ?>
 
                 <li>
-                    <?php if (!empty($item['href'])): ?>
-                        <a href="<?= $item['href'] ?>" target="_blank" class="hover:underline hover:text-cyan-600 transition-all">
-
-                            <?= $item['texto'] ?>
-
-                        </a>
-                    <?php endif; ?>
+                    <?php 
+                    // Verifica se o link é externo e adiciona target="_blank" apenas para links externos
+                    $target = (strpos($item['href'], 'http') === 0) ? 'target="_blank"' : ''; 
+                    ?>
+                    <a href="<?= $item['href'] ?>" <?= $target ?> class="hover:underline hover:text-cyan-600 transition-all">
+                        <?= $item['texto'] ?>
+                    </a>                    
                 </li>
 
             <?php endforeach; ?>
