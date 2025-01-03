@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const textElement = document.getElementById("typing-text");
-    const text = "Olá, meu nome é Douglas Almeida.";
+    const text = "Olá, meu nome é Douglas Almeida!!";
     let index = 0;
 
     function typeEffect() {

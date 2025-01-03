@@ -12,7 +12,7 @@ $itensHero = [
     <div class="w-2/3">
         <h1 class="text-3xl font-bold">
             <!-- adicionando efeito digitar para exibir aqui meu nome -->
-            <span id="typing-text"></span>
+            <span id="typing-text" class="bg-gradient-to-r from-cyan-600 via-blue-500 to-cyan-400 inline-block text-transparent bg-clip-text"></span>
         </h1>
 
         <p class="text-xl leading-7 mt-6 text-justify">Desenvolvedor web que adoro criar coisas novas e aprender novas tecnologias. Experiência em PHP, Láravel, CSS, HTML, Javascript, Tailwind e Bootstrap.
@@ -28,7 +28,7 @@ $itensHero = [
                             <span> <!-- Usando <span> caso não tenha href -->
                             <?php endif; ?>
 
-                            <img class="w-[30px] h-[30px] hover:animate-bounce" src="<?= $itemHero['src'] ?>" alt="<?= $itemHero['alt'] ?>">
+                            <img class="w-[30px] h-[30px] hover:animate-bounce cursor-pointer" src="<?= $itemHero['src'] ?>" alt="<?= $itemHero['alt'] ?>">
 
                             <?php if (!empty($itemHero['href'])): ?>
                         </a>
