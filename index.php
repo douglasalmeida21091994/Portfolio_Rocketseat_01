@@ -28,7 +28,8 @@
                 em 2024)</span>--></h2>
 
         <!-- PROJETO -->
-        <?php include('./componentes/projetos.php') ?>        
+        <?php include('./componentes/projetos.php') ?> 
+               
 
     </main>
 
@@ -40,6 +41,9 @@
             &copy; Copyright <?= date('Y') ?> - Desenvolvido por Douglas Almeida ;)
 
         </div>
+
+        <!-- crie um footer -->
+         <footer style="position: fixed; bottom: 0; width: 100%; background-color: #333; color: #fff; text-align: center; padding: 10px;">&copy; Copyright <?= date('Y') ?> - Desenvolvido por Douglas Almeida ;></footer>
 
     </footer>
 
